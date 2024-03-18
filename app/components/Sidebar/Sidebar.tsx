@@ -7,7 +7,7 @@ import {
   FaMapMarkerAlt,
   FaPhone,
 } from 'react-icons/fa';
-import profilePic from '../../../public/selfie.PNG';
+import profilePic from '../../../public/selfie.png';
 import Education, { EducationProps } from './Education';
 import SidebarSection from './SidebarSection';
 
@@ -44,7 +44,7 @@ const education: EducationProps[] = [
   },
   {
     title: 'Data Scientist',
-    institution: 'Digital Hosue',
+    institution: 'Digital House',
     dateStart: new Date(2017, 6, 1),
     dateEnd: new Date(2017, 12, 1),
   },
@@ -68,6 +68,18 @@ const education: EducationProps[] = [
   },
 ];
 
+const tecnologies = [
+  'Javascript',
+  'Typescript',
+  'React',
+  'Next.js',
+  'Express',
+  'MongoDB',
+  'PostgreSQL',
+  'CSS',
+  'Tailwind',
+];
+
 function Sidebar() {
   return (
     <div className='grid-cols-1 bg-slate-800 p-6 pt-8'>
@@ -76,7 +88,7 @@ function Sidebar() {
       </div>
 
       <div className='space-y-5'>
-        <SidebarSection title='Contact'>
+        <SidebarSection title='Contacto'>
           <div className='space-y-3'>
             {contact.map((el) => (
               <p key={el.text} className='flex items-center gap-4'>
@@ -86,10 +98,21 @@ function Sidebar() {
             ))}
           </div>
         </SidebarSection>
-        <SidebarSection title='Education'>
+
+        <SidebarSection title='Educación'>
           <div className='space-y-3'>
             {education.map((el) => (
               <Education key={el.title} {...el} />
+            ))}
+          </div>
+        </SidebarSection>
+
+        <SidebarSection title='Tecnologías'>
+          <div className='grid grid-cols-2 place-items-start'>
+            {tecnologies.map((el) => (
+              <p key={el} className='text-sm p-2'>
+                {el}
+              </p>
             ))}
           </div>
         </SidebarSection>
