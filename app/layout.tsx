@@ -19,7 +19,7 @@ export default function RootLayout({
       <body
         className={
           inter.className +
-          ' mx-auto w-[21cm] h-[29.1cm] grid grid-cols-[7.5cm_1fr] grid-rows-1 bg-slate-50'
+          ' mx-auto w-[21cm] h-[29.7cm] grid grid-cols-[7.5cm_1fr] grid-rows-1 bg-slate-50'
         }
       >
         {children}

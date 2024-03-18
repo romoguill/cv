@@ -1,8 +1,39 @@
 import Image from 'next/image';
 // @ts-ignore
+import { IconType } from 'react-icons';
+import {
+  FaEnvelope,
+  FaLinkedin,
+  FaMapMarkerAlt,
+  FaPhone,
+} from 'react-icons/fa';
 import profilePic from '../../../public/selfie.PNG';
-import SidebarSection from './SidebarSection';
 import Education, { EducationProps } from './Education';
+import SidebarSection from './SidebarSection';
+
+interface ContactInfo {
+  text: string;
+  Icon: IconType;
+}
+
+const contact: ContactInfo[] = [
+  {
+    text: 'romoguill@gmail.com',
+    Icon: FaEnvelope,
+  },
+  {
+    text: '(+549) 1141730573',
+    Icon: FaPhone,
+  },
+  {
+    text: 'www.linkedin.com/in/rodrigo-moguillansky',
+    Icon: FaLinkedin,
+  },
+  {
+    text: 'Olivos, Buenos Aires, Argentina',
+    Icon: FaMapMarkerAlt,
+  },
+];
 
 const education: EducationProps[] = [
   {
@@ -39,17 +70,30 @@ const education: EducationProps[] = [
 
 function Sidebar() {
   return (
-    <div className='grid-cols-1 bg-slate-800 p-4 pt-8'>
+    <div className='grid-cols-1 bg-slate-800 p-6 pt-8'>
       <div className='rounded-full relative w-28 h-28 overflow-hidden mx-auto mb-10'>
         <Image src={profilePic} alt='profile pic' fill className='scale-105' />
       </div>
-      <SidebarSection title='Education'>
-        <div className='space-y-3'>
-          {education.map((ed) => (
-            <Education key={ed.title} {...ed} />
-          ))}
-        </div>
-      </SidebarSection>
+
+      <div className='space-y-5'>
+        <SidebarSection title='Contact'>
+          <div className='space-y-3'>
+            {contact.map((el) => (
+              <p key={el.text} className='flex items-center gap-4'>
+                <el.Icon size={20} className='shrink-0' />
+                <span className='break-words overflow-hidden'>{el.text}</span>
+              </p>
+            ))}
+          </div>
+        </SidebarSection>
+        <SidebarSection title='Education'>
+          <div className='space-y-3'>
+            {education.map((el) => (
+              <Education key={el.title} {...el} />
+            ))}
+          </div>
+        </SidebarSection>
+      </div>
     </div>
   );
 }
