@@ -7,6 +7,7 @@ const skills = [
   'Agile',
   'Líder',
   'Compañero',
+  'Analítico',
 ];
 
 interface SidebarProps {
@@ -23,7 +24,7 @@ function Sidebar2({ page }: SidebarProps) {
               Español - <span className='italic font-normal'>Nativo</span>
             </li>
             <li>
-              Ingles - <span className='italic font-normal'>Avanzado</span>
+              Inglés - <span className='italic font-normal'>Avanzado</span>
             </li>
           </ul>
         </SidebarSection>

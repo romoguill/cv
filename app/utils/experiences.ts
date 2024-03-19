@@ -4,7 +4,7 @@ export const experiences1: Experience[] = [
   {
     title: 'Independiente',
     company: 'Industria agronómica',
-    bullets: ['Gestión de un negocio agropecuario'],
+    bullets: ['Gestión de un negocio agropecuario.'],
     dateStart: new Date(2020, 11, 1),
     dateEnd: new Date(2023, 4, 1),
   },
@@ -12,8 +12,8 @@ export const experiences1: Experience[] = [
     title: 'Jefe Regional de Planeamiento',
     company: 'Axionlog',
     bullets: [
-      'Coordinación de equipos de Compras en 8 paises',
-      'Liderar el diseño e implementación de un ERP desarrollado en conjunto con una consultora tecnológica',
+      'Coordinación de equipos de Compras en 8 paises.',
+      'Liderar el diseño e implementación de un ERP desarrollado en conjunto con una consultora tecnológica.',
     ],
     dateStart: new Date(2019, 11, 1),
     dateEnd: new Date(2020, 12, 1),
@@ -23,16 +23,16 @@ export const experiences1: Experience[] = [
     company: 'Axionlog',
     bullets: [
       'Elaboración de un MasterPlan para la construcción de uno de los centros logistícos de temperatura controlada más grandes del país por un valor de US$ 40MM.',
-      'Negociación de contratos de energía y gerenciamiento de proyectos relacionados a la eficiencia energética',
+      'Negociación de contratos de energía y gerenciamiento de proyectos relacionados a la eficiencia energética.',
     ],
     dateStart: new Date(2019, 4, 1),
-    dateEnd: new Date(2020, 11, 1),
+    dateEnd: new Date(2019, 11, 1),
   },
   {
     title: 'Project Manager',
     company: 'Axionlog',
     bullets: [
-      'Gerenciamiento del diseño y ejecución de la construcción de un freezer de 1000m2.',
+      'Gerenciamiento del diseño y ejecución de la construcción de un freezer de 1000m2 y un presupuesto de US$ 3.2 MM.',
       'Responsable por la implementación de un sistema WMS',
     ],
     dateStart: new Date(2017, 8, 1),
