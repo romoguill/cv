@@ -85,10 +85,14 @@ const tecnologies = [
   'Tailwind',
 ];
 
-function Sidebar() {
+interface SidebarProps {
+  page: number;
+}
+
+function Sidebar1({ page }: SidebarProps) {
   return (
     <div className='grid-cols-1 bg-slate-800 p-6 pt-8'>
-      <div className='rounded-full relative w-28 h-28 overflow-hidden mx-auto mb-10'>
+      <div className='rounded-full relative w-32 h-32 overflow-hidden mx-auto mb-10'>
         <Image src={profilePic} alt='profile pic' fill className='scale-105' />
       </div>
 
@@ -128,4 +132,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default Sidebar1;

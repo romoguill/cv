@@ -19,7 +19,7 @@ function ExperienceItem({ experience }: ExperienceItemProps) {
       <ul className='ml-4 text-[15px]'>
         {experience.bullets.map((el) => (
           <li key={el} className='flex gap-2 items-start'>
-            <FaGreaterThan size={12} className='mt-[0.3rem]' />
+            <FaGreaterThan size={12} className='mt-[0.3rem] shrink-0' />
             <span>{el}</span>
           </li>
         ))}

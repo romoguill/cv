@@ -5,13 +5,25 @@ const fontHeading = Michroma({
   subsets: ['latin'],
 });
 
-function Header() {
+interface HeaderProps {
+  page: number;
+}
+
+function Header({ page }: HeaderProps) {
   return (
     <header>
-      <h1 className={`${fontHeading.className} text-4xl`}>
+      <h1
+        className={`${fontHeading.className} ${
+          page === 1 ? 'text-4xl' : 'text-2xl'
+        }`}
+      >
         Rodrigo Moguillanksy
       </h1>
-      <h2 className='text-2xl font-semibold italic mt-3 mb-4'>
+      <h2
+        className={`font-semibold italic ${
+          page === 1 ? 'text-2xl mt-3 mb-4' : 'text-xl'
+        }`}
+      >
         Full-Stack Developer
       </h2>
       <div className='space-y-1 text-[14px]'>
