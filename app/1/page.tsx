@@ -1,7 +1,8 @@
 import { PropsWithChildren } from 'react';
-import Sidebar from '../components/Sidebar/Sidebar';
+import ExperienceSection from '../components/Main/ExperienceSection';
 import Header from '../components/Main/Header';
 import MainContainer from '../components/Main/MainContainer';
+import Sidebar from '../components/Sidebar/Sidebar';
 
 function Page1({ children }: PropsWithChildren) {
   return (
@@ -9,6 +10,7 @@ function Page1({ children }: PropsWithChildren) {
       <Sidebar />
       <MainContainer>
         <Header />
+        <ExperienceSection />
       </MainContainer>
     </>
   );
