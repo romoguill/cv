@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { IconType } from 'react-icons';
 import {
   FaEnvelope,
+  FaGithub,
   FaLinkedin,
   FaMapMarkerAlt,
   FaPhone,
@@ -28,6 +29,10 @@ const contact: ContactInfo[] = [
   {
     text: 'www.linkedin.com/in/rodrigo-moguillansky',
     Icon: FaLinkedin,
+  },
+  {
+    text: 'https://github.com/romoguill',
+    Icon: FaGithub,
   },
   {
     text: 'Olivos, Buenos Aires, Argentina',
@@ -93,7 +98,9 @@ function Sidebar() {
             {contact.map((el) => (
               <p key={el.text} className='flex items-center gap-4'>
                 <el.Icon size={20} className='shrink-0' />
-                <span className='break-words overflow-hidden'>{el.text}</span>
+                <span className='break-words overflow-hidden text-sm'>
+                  {el.text}
+                </span>
               </p>
             ))}
           </div>
