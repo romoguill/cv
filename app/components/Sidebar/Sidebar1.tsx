@@ -8,7 +8,7 @@ import {
   FaMapMarkerAlt,
   FaPhone,
 } from 'react-icons/fa';
-import profilePic from '../../../public/selfie.png';
+import profilePic from '../../../public/profile.jpg';
 import Education, { EducationProps } from './Education';
 import SidebarSection from './SidebarSection';
 
@@ -93,7 +93,12 @@ function Sidebar1({ page }: SidebarProps) {
   return (
     <div className='grid-cols-1 bg-slate-800 p-6 pt-8'>
       <div className='rounded-full relative w-32 h-32 overflow-hidden mx-auto mb-10'>
-        <Image src={profilePic} alt='profile pic' fill className='scale-105' />
+        <Image
+          src={profilePic}
+          alt='profile pic'
+          fill
+          className='scale-105 object-cover'
+        />
       </div>
 
       <div className='space-y-5'>
