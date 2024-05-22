@@ -92,7 +92,7 @@ export const experiences1Eng: Experience[] = [
     title: 'Senior Procurement Analyst',
     company: 'Axionlog',
     bullets: [
-      "Responsible for purchasing supplies for McDonald's and Subway's businesses.",
+      "Responsible for procurement of QSR customers such as McDonald's and Subway's businesses.",
       'Creation of a Machine Learning model to create clusters of products with similar demand seasonality.',
     ],
     dateStart: new Date(2016, 4, 1),

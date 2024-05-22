@@ -87,13 +87,13 @@ const educationEng: EducationProps[] = [
     dateEnd: new Date(2017, 12, 1),
   },
   {
-    title: 'Especialista en Logística',
+    title: 'Master in Logistics',
     institution: 'ITBA',
     dateStart: new Date(2014, 4, 1),
     dateEnd: new Date(2015, 12, 1),
   },
   {
-    title: 'Ingeniería Industrial',
+    title: 'MEng Industrial Engineering',
     institution: 'ITBA',
     dateStart: new Date(2007, 3, 1),
     dateEnd: new Date(2012, 8, 1),
@@ -130,8 +130,9 @@ function Sidebar1({ page, lang }: SidebarProps) {
         <Image
           src={profilePic}
           alt='profile pic'
-          fill
-          className='scale-105 object-cover'
+          height={130}
+          width={130}
+          className='object-cover -mt-2'
         />
       </div>
 
@@ -151,13 +152,13 @@ function Sidebar1({ page, lang }: SidebarProps) {
 
         <SidebarSection title='Educación'>
           <div className='space-y-3'>
-            {education.map((el) => (
+            {(lang === 'en' ? educationEng : educationEsp).map((el) => (
               <Education key={el.title} {...el} />
             ))}
           </div>
         </SidebarSection>
 
-        <SidebarSection title='Tecnologías'>
+        <SidebarSection title={lang === 'en' ? 'Technologies' : 'Tecnologías'}>
           <div className='grid grid-cols-2 place-items-start'>
             {tecnologies.map((el) => (
               <p key={el} className='text-sm p-2'>
