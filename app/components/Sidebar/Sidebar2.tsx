@@ -12,9 +12,10 @@ const skills = [
 
 interface SidebarProps {
   page: number;
+  lang: 'en' | 'es';
 }
 
-function Sidebar2({ page }: SidebarProps) {
+function Sidebar2({ page, lang }: SidebarProps) {
   return (
     <div className='grid-cols-1 bg-slate-800 p-6 pt-8'>
       <div className='space-y-5'>

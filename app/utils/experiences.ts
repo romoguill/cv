@@ -1,6 +1,6 @@
 import { Experience } from '../components/Main/ExperienceSection';
 
-export const experiences1: Experience[] = [
+export const experiences1Esp: Experience[] = [
   {
     title: 'Independiente',
     company: 'Industria agronómica',
@@ -50,7 +50,57 @@ export const experiences1: Experience[] = [
   },
 ];
 
-export const experiences2: Experience[] = [
+export const experiences1Eng: Experience[] = [
+  {
+    title: 'Self-employed',
+    company: 'Agronomic Industry',
+    bullets: ['Management of an agricultural business.'],
+    dateStart: new Date(2020, 11, 1),
+    dateEnd: new Date(2023, 4, 1),
+  },
+  {
+    title: 'Regional Planning Manager',
+    company: 'Axionlog',
+    bullets: [
+      'Coordination of Procurement teams in 8 countries.',
+      'Lead the design and implementation of an ERP developed in conjunction with an IT partner.',
+    ],
+    dateStart: new Date(2019, 11, 1),
+    dateEnd: new Date(2020, 12, 1),
+  },
+  {
+    title: 'Senior Project Manager',
+    company: 'Axionlog',
+    bullets: [
+      'Development of a Master Plan for the construction of one of the largest temperature-controlled warehouses in the country valued at US$ 40MM.',
+      'Negotiation of energy contracts and management of projects related to energy efficiency.',
+    ],
+    dateStart: new Date(2019, 4, 1),
+    dateEnd: new Date(2019, 11, 1),
+  },
+  {
+    title: 'Project Manager',
+    company: 'Axionlog',
+    bullets: [
+      'Management of the design and execution of the construction of a 1000m2 freezer with a budget of US$ 3.2 MM.',
+      'Responsible for the implementation of a WMS system.',
+    ],
+    dateStart: new Date(2017, 8, 1),
+    dateEnd: new Date(2019, 4, 1),
+  },
+  {
+    title: 'Senior Procurement Analyst',
+    company: 'Axionlog',
+    bullets: [
+      "Responsible for purchasing supplies for McDonald's and Subway's businesses.",
+      'Creation of a Machine Learning model to create clusters of products with similar demand seasonality.',
+    ],
+    dateStart: new Date(2016, 4, 1),
+    dateEnd: new Date(2017, 8, 1),
+  },
+];
+
+export const experiences2Esp: Experience[] = [
   {
     title: 'Analista de Planeamiento Estratégico.',
     company: 'Unilever',
@@ -77,6 +127,39 @@ export const experiences2: Experience[] = [
     bullets: [
       'Gestión de insumos para la planta de bebidas no carbonatadas.',
       'Diseño de tablero de control del sector y automatización de pedidos.',
+    ],
+    dateStart: new Date(2012, 11, 1),
+    dateEnd: new Date(2014, 3, 1),
+  },
+];
+
+export const experiences2Eng: Experience[] = [
+  {
+    title: 'Strategic Planning Analyst',
+    company: 'Unilever',
+    bullets: [
+      'Modification of the logistics network in Argentina by contracting new optimal cross-docking centers.',
+      'Programming a script in SAP that allowed the grouping of incomplete orders, improving Finance and Transportation operational processes.',
+    ],
+    dateStart: new Date(2014, 7, 1),
+    dateEnd: new Date(2016, 4, 1),
+  },
+  {
+    title: 'Tactical Planning Analyst',
+    company: 'Coca-Cola Femsa',
+    bullets: [
+      'Design of annual production plans for all of Argentina.',
+      'Calculation of optimal production lots and SAP parameterization.',
+    ],
+    dateStart: new Date(2014, 3, 1),
+    dateEnd: new Date(2014, 7, 1),
+  },
+  {
+    title: 'Logistics Analyst',
+    company: 'Coca-Cola Femsa',
+    bullets: [
+      'Management of supplies for the non-carbonated beverage plant.',
+      "Design of the sector's control panel and order automation.",
     ],
     dateStart: new Date(2012, 11, 1),
     dateEnd: new Date(2014, 3, 1),

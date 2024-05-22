@@ -40,7 +40,40 @@ const contact: ContactInfo[] = [
   },
 ];
 
-const education: EducationProps[] = [
+const educationEsp: EducationProps[] = [
+  {
+    title: 'Full-Stack Developer',
+    institution: 'Digital House',
+    dateStart: new Date(2022, 6, 1),
+    dateEnd: new Date(2023, 5, 1),
+  },
+  {
+    title: 'Data Scientist',
+    institution: 'Digital House',
+    dateStart: new Date(2017, 6, 1),
+    dateEnd: new Date(2017, 12, 1),
+  },
+  {
+    title: 'Especialista en Logística',
+    institution: 'ITBA',
+    dateStart: new Date(2014, 4, 1),
+    dateEnd: new Date(2015, 12, 1),
+  },
+  {
+    title: 'Ingeniería Industrial',
+    institution: 'ITBA',
+    dateStart: new Date(2007, 3, 1),
+    dateEnd: new Date(2012, 8, 1),
+  },
+  {
+    title: 'Bachelor Degree',
+    institution: "St Brendan's College",
+    dateStart: new Date(1993, 3, 1),
+    dateEnd: new Date(2006, 12, 1),
+  },
+];
+
+const educationEng: EducationProps[] = [
   {
     title: 'Full-Stack Developer',
     institution: 'Digital House',
@@ -87,9 +120,10 @@ const tecnologies = [
 
 interface SidebarProps {
   page: number;
+  lang: 'en' | 'es';
 }
 
-function Sidebar1({ page }: SidebarProps) {
+function Sidebar1({ page, lang }: SidebarProps) {
   return (
     <div className='grid-cols-1 bg-slate-800 p-6 pt-8'>
       <div className='rounded-full relative w-32 h-32 overflow-hidden mx-auto mb-10'>
