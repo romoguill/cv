@@ -137,7 +137,7 @@ function Sidebar1({ page, lang }: SidebarProps) {
       </div>
 
       <div className='space-y-5'>
-        <SidebarSection title='Contacto'>
+        <SidebarSection title={lang === 'en' ? 'Contact' : 'Contacto'}>
           <div className='space-y-3'>
             {contact.map((el) => (
               <p key={el.text} className='flex items-center gap-4'>
@@ -150,7 +150,7 @@ function Sidebar1({ page, lang }: SidebarProps) {
           </div>
         </SidebarSection>
 
-        <SidebarSection title='Educación'>
+        <SidebarSection title={lang === 'en' ? 'Education' : 'Educación'}>
           <div className='space-y-3'>
             {(lang === 'en' ? educationEng : educationEsp).map((el) => (
               <Education key={el.title} {...el} />

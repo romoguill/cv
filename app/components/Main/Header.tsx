@@ -29,14 +29,14 @@ function Header({ page, lang }: HeaderProps) {
       </h2>
       <div className='space-y-1 text-[14px]'>
         <p>
-          Industrial Engineer with over 8 years of experience in Supply Chain,
-          leading projects across various domains including IT, Engineering, and
-          Business Processes.
+          {lang === 'en'
+            ? 'Industrial Engineer with over 8 years of experience in Supply Chain, leading projects across various domains including IT, Engineering, and Business Processes.'
+            : 'Ingeniero Industrial con más de 8 años de experiencia en Supply Chain, durante los cuales lideré proyectos que atravesaron diversas áreas como IT, Ingeniería y Procesos.'}
         </p>
         <p>
-          My continuous pursuit of processes automation and the design of
-          technological tools for logistics has steered my career towards
-          software development.
+          {lang === 'en'
+            ? 'My continuous pursuit of processes automation and the design of technological tools for logistics has steered my career towards software development.'
+            : 'La búsqueda continua de automatización de procesos y diseño de herramientas tecnológicas para la logistíca, me llevaron a orientar mi carrera al mundo del desarrollo y la programación'}
         </p>
       </div>
     </header>

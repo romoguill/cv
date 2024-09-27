@@ -6,7 +6,7 @@ export const experiences1Esp: Experience[] = [
     company: 'Industria agronómica',
     bullets: ['Gestión de un negocio agropecuario.'],
     dateStart: new Date(2020, 11, 1),
-    dateEnd: new Date(2023, 4, 1),
+    dateEnd: new Date(2024, 3, 1),
   },
   {
     title: 'Jefe Regional de Planeamiento',
@@ -56,7 +56,7 @@ export const experiences1Eng: Experience[] = [
     company: 'Agronomic Industry',
     bullets: ['Management of an agricultural business.'],
     dateStart: new Date(2020, 11, 1),
-    dateEnd: new Date(2023, 4, 1),
+    dateEnd: new Date(2024, 3, 1),
   },
   {
     title: 'Regional Planning Manager',
