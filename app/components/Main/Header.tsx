@@ -18,7 +18,7 @@ function Header({ page, lang }: HeaderProps) {
           page === 1 ? 'text-4xl' : 'text-2xl'
         }`}
       >
-        Rodrigo Moguillanksy
+        Rodrigo Moguillansky
       </h1>
       <h2
         className={`font-semibold italic ${

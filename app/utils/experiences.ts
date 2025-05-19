@@ -2,11 +2,22 @@ import { Experience } from '../components/Main/ExperienceSection';
 
 export const experiences1Esp: Experience[] = [
   {
+    title: 'Freelancer',
+    company: 'PixMed',
+    bullets: [
+      'Diseño y desarrollo del MVP de PixMed.',
+      'Next.js utilizado como framework general y Hono como wrapper para las APIs.',
+      'Otras tecnologías: Tailwind, TanstackQuery, PostgreSQL, Docker, CI/CD.',
+    ],
+    dateStart: new Date(2024, 11, 1),
+    dateEnd: new Date(2025, 4, 1),
+  },
+  {
     title: 'Independiente',
     company: 'Industria agronómica',
     bullets: ['Gestión de un negocio agropecuario.'],
     dateStart: new Date(2020, 11, 1),
-    dateEnd: new Date(2024, 3, 1),
+    dateEnd: new Date(2024, 5, 1),
   },
   {
     title: 'Jefe Regional de Planeamiento',
@@ -38,25 +49,26 @@ export const experiences1Esp: Experience[] = [
     dateStart: new Date(2017, 8, 1),
     dateEnd: new Date(2019, 4, 1),
   },
-  {
-    title: 'Analista Senior de Compras',
-    company: 'Axionlog',
-    bullets: [
-      "Responsable de la compra de insumos para los negocios de McDonald's y Subway.",
-      'Creación de un modelo de Machine Learning para armar clusters de productos con similar estacionalidad de demanda.',
-    ],
-    dateStart: new Date(2016, 4, 1),
-    dateEnd: new Date(2017, 8, 1),
-  },
 ];
 
 export const experiences1Eng: Experience[] = [
+  {
+    title: 'Freelancer',
+    company: 'PixMed',
+    bullets: [
+      'Design and development of PixMed MVP.',
+      'Next.js used as the main framework and Hono as API wrapper.',
+      'Other technologies: Tailwind, TanstackQuery, PostgreSQL, Docker, CI/CD.',
+    ],
+    dateStart: new Date(2024, 11, 1),
+    dateEnd: new Date(2025, 4, 1),
+  },
   {
     title: 'Self-employed',
     company: 'Agronomic Industry',
     bullets: ['Management of an agricultural business.'],
     dateStart: new Date(2020, 11, 1),
-    dateEnd: new Date(2024, 3, 1),
+    dateEnd: new Date(2024, 5, 1),
   },
   {
     title: 'Regional Planning Manager',
@@ -88,19 +100,19 @@ export const experiences1Eng: Experience[] = [
     dateStart: new Date(2017, 8, 1),
     dateEnd: new Date(2019, 4, 1),
   },
+];
+
+export const experiences2Esp: Experience[] = [
   {
-    title: 'Senior Procurement Analyst',
+    title: 'Analista Senior de Compras',
     company: 'Axionlog',
     bullets: [
-      "Responsible for procurement of QSR customers such as McDonald's and Subway's businesses.",
-      'Creation of a Machine Learning model to create clusters of products with similar demand seasonality.',
+      "Responsable de la compra de insumos para los negocios de McDonald's y Subway.",
+      'Creación de un modelo de Machine Learning para armar clusters de productos con similar estacionalidad de demanda.',
     ],
     dateStart: new Date(2016, 4, 1),
     dateEnd: new Date(2017, 8, 1),
   },
-];
-
-export const experiences2Esp: Experience[] = [
   {
     title: 'Analista de Planeamiento Estratégico.',
     company: 'Unilever',
@@ -134,6 +146,16 @@ export const experiences2Esp: Experience[] = [
 ];
 
 export const experiences2Eng: Experience[] = [
+  {
+    title: 'Senior Procurement Analyst',
+    company: 'Axionlog',
+    bullets: [
+      "Responsible for procurement of QSR customers such as McDonald's and Subway's businesses.",
+      'Creation of a Machine Learning model to create clusters of products with similar demand seasonality.',
+    ],
+    dateStart: new Date(2016, 4, 1),
+    dateEnd: new Date(2017, 8, 1),
+  },
   {
     title: 'Strategic Planning Analyst',
     company: 'Unilever',

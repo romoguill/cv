@@ -115,7 +115,6 @@ const tecnologies = [
   'MongoDB',
   'PostgreSQL',
   'CSS',
-  'Tailwind',
 ];
 
 interface SidebarProps {
